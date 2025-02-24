@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication</title>
+  </head>
+  <body>
+    <h1>Simple Maltiplication Calculator</h1>
+    <table>
+      <tr>
+        <td>
+          <button onclick="displayNo(this)" type="button" value="1" id="no1">
+            1
+          </button>
+        </td>
+        <td>
+          <button onclick="displayNo(this)" type="button" value="2" class="no">
+            2
+          </button>
+        </td>
+        <td>
+          <button onclick="displayNo(this)" type="button" value="3" class="no">
+            3
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="displayNo(this)" type="button" value="4" class="no">
+            4
+          </button>
+        </td>
+        <td>
+          <button onclick="displayNo(this)" type="button" value="5" class="no">
+            5
+          </button>
+        </td>
+        <td>
+          <button onclick="displayNo(this)" type="button" value="6" class="no">
+            6
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="displayNo(this)" type="button" value="7" class="no">
+            7
+          </button>
+        </td>
+        <td>
+          <button onclick="displayNo(this)" type="button" value="8" class="no">
+            8
+          </button>
+        </td>
+        <td>
+          <button onclick="displayNo(this)" type="button" value="9" class="no">
+            9
+          </button>
+        </td>
+      </tr>
+    </table>
+    <p id="output">Result: <span id="result"></span></p>
+    <script>
+      function displayNo(button) {
+        // let result = document.querySelector("button");
+        // console.log(result)
+        let resultValue = button.value;
+        console.log(resultValue);
+        document.getElementById("result").innerHTML = resultValue;
+      }
+      // function getValue() {
+      //   console.log("clicked first")
+      //   document.querySelector("button").addEventListener('click', function() {
+      //     let result = document.getValue
+      //     console.log(result)
+      //   }, false);
+      // }
+    </script>
+  </body>
+</html>
