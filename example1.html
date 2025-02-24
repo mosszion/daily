@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+  <h1>JavaScript Functions</h1>
+  <p>Call a function which performs a malticulation and returns the result:</p>
+  <input type="text" id="box1">
+  <input type="text" id="box2">
+  <br>
+  <button onclick="myDemo()"> Calculate</button>
+  <p >The result is : <span id="demo"></span></p>
+  <script>
+    function myDemo() {
+      let b1 = document.getElementById("box1").value;
+      let b2 = document.getElementById("box2").value;
+      let result =  b1 * b2;
+   
+ 
+    document.getElementById("demo").innerHTML = result;
+    }
+
+  </script>
+</body>
+</html>
