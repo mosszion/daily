@@ -65,9 +65,12 @@
       function displayNo(button) {
         // let result = document.querySelector("button");
         // console.log(result)
+        let display=""
         let resultValue = button.value;
         console.log(resultValue);
-        document.getElementById("result").innerHTML = resultValue;
+        display += resultValue;
+        console.log(display)
+          document.getElementById("result").innerHTML += display;
       }
       // function getValue() {
       //   console.log("clicked first")
