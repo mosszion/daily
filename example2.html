@@ -24,6 +24,9 @@
             3
           </button>
         </td>
+        <td>
+          <button type="button" value="+" > +</button>
+        </td>
       </tr>
       <tr>
         <td>
@@ -40,6 +43,9 @@
           <button onclick="displayNo(this)" type="button" value="6" class="no">
             6
           </button>
+        </td>
+        <td>
+          <button type="button" value="-" >-</button>
         </td>
       </tr>
       <tr>
@@ -58,6 +64,9 @@
             9
           </button>
         </td>
+        <td>
+          <button type="button" value="*" >*</button>
+        </td>
       </tr>
     </table>
     <p id="output">Result: <span id="result"></span></p>
@@ -70,7 +79,9 @@
         console.log(resultValue);
         display += resultValue;
         console.log(display)
-          document.getElementById("result").innerHTML += display;
+          let content = document.getElementById("result").innerHTML += display;
+          console.log(content)
+
       }
       // function getValue() {
       //   console.log("clicked first")
